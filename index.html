@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="index.css">
     <title>DOON MILITARY SCHOOL</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
@@ -13,7 +13,12 @@
    
 </head>
 
-<body>
+<body style="overflow-x: hidden;" >
+  <style>
+    body, .container {
+        overflow-x: hidden;
+    }
+</style>
   <style>
     html, body {
       height: 100%;
@@ -32,7 +37,7 @@
   </style>
 <!-- navigation starts here -->
 
-<nav class="bg-white dark:bg-gray-150 fixed w-full z-20 top-0 left-0 border-b border-gray-200 ">
+<nav class=" bg-white dark:bg-gray-150 fixed w-full z-20 top-0 left-0 border-b border-gray-200 ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       
     <a href="index.html" class="flex items-center">
@@ -70,11 +75,15 @@
           <li>
             <a href="/registration.html" class="block py-2 pl-3 pr-4 text-black  md:bg-transparent md:text-black-700 md:p-0 md:dark:text-black-500">ONLINE REGISTRATION</a>
           </li>
+          <li>
+            <a href="/download.html" class="block py-2 pl-3 pr-4 text-black  md:bg-transparent md:text-black-700 md:p-0 md:dark:text-black-500">STUDY MATERIAL</a>
+          </li>
       </ul>
+
     </div>
     </div>
   </nav>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+
 
 <!-- navigation ends here -->
 
@@ -125,9 +134,9 @@
         </div>
         <div class="banner-right">
             <ul class="flex flex-col">
-                <li class="rounded-3xl p-3 my-5 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900">CHECK YOUR ELIGIBLITY ></li>
-                <li class="rounded-3xl p-3 my-5 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900">FILL APPLICATION FORM ></li>
-                <li class="rounded-3xl p-3 my-5 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900">COMPLETE STUDY MATERIAL ></li>
+              <li class="rounded-3xl p-3 my-5 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900"><a href="#this">CHECK YOUR ELIGIBILITY ></a></li>
+              <li class="rounded-3xl p-3 my-5 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900"><a href="registration.html">FILL APPLICATION FORM ></a></li>
+              <li class="rounded-3xl p-3 my-5 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900"><a href="download.html">COMPLETE STUDY MATERIAL ></a></li>
             </ul>
         </div>
     </div>
@@ -141,11 +150,171 @@
     </div>
     
 
-
+<br><br>
 
 
 <!-- testing section ends -->
 
+<div class="" id="this">
+    
+  
+  <div class="relative block md:flex items-center">
+    
+    <div class="w-full md:w-1/2 relative z-0 px-8 md:px-0 md:py-16       ">
+      <div class="section-2-bottom text-white rounded-b md:rounded-b-none md:rounded-r shadow-lg overflow-hidden">
+        <div class="text-lg font-large uppercase p-8 text-center  tracking-wide"></div>
+        <div class="text-center text-xl sm:text-md max-w-sm mx-auto mt-8 text-white-200 px-10 lg:px-0">
+          Find out which schools your
+          child can apply to this year.
+        </div>
+        <div class="mt-8  mx-8 lg:mx-16 flex flex-wrap">
+          <h1>
+              Need help? Talk to us.<br>
+              8171054504, 6397321522
+          </h1>
+        </div>
+        <a class="block flex items-center justify-center section-2-bottom  p-8 text-md font-semibold text-gray-300 uppercase mt-8" href="#">
+          <span></span>
+          <span class="font-medium text-gray-300 ml-2"></span>
+        </a>
+      </div>
+    </div>
+    <div class="md:w-1/2 p-8 bg-gray-100 rounded-b-lg md:rounded-b-none md:rounded-r-lg">
+      <h2 class="text-lg font-medium text-blue-900 uppercase mb-6">
+        Check your eligibility
+      </h2>
+      <div class="mb-6">
+        <div class="gender-check flex">
+          <div class="gender-boy border-2 mx-2 p-3 px-5 rounded-3xl bg-white">
+              <input type="checkbox" name="boy" class="">
+              <label>BOY</label>
+          </div>
+          <div class="gender-boy border-2 mx-2 p-3 px-5 rounded-3xl bg-white">
+              <input type="checkbox" name="girl" class="">
+              <label>GIRL</label><br>
+          </div>
+      </div>
+        </div>
+      <div class="mb-6">
+        <label for="DOB" class="block font-semibold text-gray-700 mb-2">Date of birth</label>
+        <div class="flex">
+          <select name="date" class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded">
+              <option value="date">Date</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+          </select>
+          <select name="month" class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded">
+            <option value="month">month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <select name="year" class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+
+
+          </select>
+        </div>
+      </div>
+      <div class="mb-6">
+        <label for="state" class="block font-semibold text-gray-700 mb-2">Your State</label>
+        <select name="state" class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded">
+          <option value="state">Your State</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="West Bengal">West Bengal</option>
+        </select>
+      </div>
+      <a href="#" id="check-eligibility" class="block bg-green-700 hover:bg-green-800 p-4 text-md font-semibold text-gray-800 uppercase">
+        <span></span>
+        <span class="font-medium text-white ml-2">Check Eligibility</span>
+      </a>
+      <br>
+      <p id="eligibility-text" class="font-medium text-black ml-2">Eligibility: </p>
+
+    </div>
+
+  </div>
+    
+  
+</div>
 
 
 
@@ -614,20 +783,54 @@ review section starts -->
 
 <!-- download button section  -->
 
+<!-- reactangular notification -->
+<div class="flex flex-col md:flex-row">
+  <div class="w-full md:w-1/2 p-6 bg-gray-100 flex flex-col justify-center items-center">
+    <h2 class="text-2xl font-semibold mb-2">Latest News and Updates</h2>
+    <p class="text-sm text-gray-500 mb-4">Get updated with us.</p>
+    <button class="px-4 py-2 bg-blue-500 text-white rounded-lg">Get Updates</button>
+  </div>
+  <div class="w-full md:w-1/2 p-6 bg-gray-100">
+    <!-- Updated Notifications Layout (One Beneath the Other) -->
+    <div class="h-24 bg-white mb-4 flex items-center justify-center shadow-xl
+
+    ">
+      <p class="text-center text-black font-semibold">Notification 1</p>
+    </div>
+    <div class="h-24 bg-white flex items-center justify-center shadow-xl">
+      <p class="text-center text-black font-semibold">Notification 2</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- rectangular notification end  -->
+
+
+
+
+
 
 
 <!-- component -->
 
 <div class="w-full p-4">
-  <div class="p-8 rounded-xl shadow-md">
+  <div class="p-8 rounded-xl shadow-2xl ">
     <div class="flex items-center justify-center mb-4">
       <!-- PDF Logo using URL -->
       <img src="https://static.vecteezy.com/system/resources/previews/000/644/844/original/vector-pdf-icon-symbol-sign.jpg" alt="PDF Logo" class="h-8 mr-2">
-      <h4 class="mb-2 text-lg font-bold">Get Free PDF</h4>
+      <h4 class="mb-2 text-lg font-bold">Get at ₹99/paper</h4>
     </div>
-    <h1 class="font-bold text-4xl">Free RIMC, RMS, Sainik School Sample Papers</h1>
+    <h1 class="font-bold text-4xl"> RIMC, RMS, Sainik School Sample Papers</h1>
 
-    <a href="https://w7.pngwing.com/pngs/190/961/png-transparent-download-now-download-icon-download-button-download-logo-flat-icon-flat-logo-flat-image-button-flat-round-thumbnail.png" download>
+    <a href="/download.html" >
       <button class="my-4 px-4 py-2 block w-full text-white bg-blue-500 hover:bg-blue-700 rounded">DOWNLOAD SAMPLE PAPER</button>
     </a>
   </div>
@@ -650,6 +853,60 @@ review section starts -->
 
 <br><br><br>
 <!-- component -->
+
+
+
+
+
+<!-- call now section -->
+
+
+<div class="bg-white ">
+  <div class="flex items-center justify-center h-full">
+    <div class="max-w-screen-xl w-screen mx-auto px-4">
+      <div class="bg-white rounded-lg shadow-lg md:flex">
+        <div class="md:w-1/2 p-8  rounded-t-lg md:rounded-t-none md:rounded-l-lg">
+          <!-- Content for the left section here -->
+          <div class="flex items-center h-full">
+            <img src="https://freesvg.org/img/1520566908.png" alt="Calling Girl" class="max-h-32 mx-auto">
+          </div>
+        </div>
+        <div class="md:w-1/2 p-8 bg-white rounded-b-lg md:rounded-b-none md:rounded-r-lg">
+          <div class="flex items-center h-full">
+            <div class="w-11/12 pr-8">
+              <h1 class="text-3xl font-semibold text-blue-900 mb-4">
+                Do you have any questions?<br>
+                Our experts have the answers.
+              </h1>
+              <a href="tel:+917906262860" class="block bg-green-700 hover:bg-green-800 p-4 text-md font-semibold text-white uppercase">
+                Call Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+
+<!-- call now section ends  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- footer starts -->
 
 <!-- component -->
@@ -722,11 +979,16 @@ review section starts -->
         </button>
       </a>
     </div> -->
-    <div class="fixed bottom-4 left-4 z-50">
-      <a href="/registration.html">
-        <img class="w-60 h-60 fill-current" src="offer.svg" alt="Sparkle Button">
+    <div class="fixed bottom-2 left-1 z-50">
+      <a href="tel:+1234567890">
+        <img class="w-60 h-60 fill-current" src="callnow.svg" alt="Sparkle Button">
       </a>
     </div>
+    <!-- <div class="fixed bottom-1 right-1 z-50">
+      <a href="/registration.html">
+        <img class="w-60 h-60 fill-current" src="callnow.svg" alt="Sparkle Button">
+      </a>
+    </div> -->
     
     <button id="openFormButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hidden">
       Open Form
@@ -789,7 +1051,7 @@ review section starts -->
 
   
 
-
+    
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -844,7 +1106,50 @@ review section starts -->
     window.location.href = "/registration.html";
   });
 </script>
-    
+
+
+<script>
+  // Function to update eligibility text
+  function updateEligibility() {
+    const birthYear = parseInt(document.querySelector('select[name="year"]').value);
+    const birthMonth = document.querySelector('select[name="month"]').value;
+
+    const eligibilityText = document.getElementById('eligibility-text');
+    let eligibility = '';
+
+    if (birthYear >= 2023 - 9) {
+      if (birthYear >= 2023 - 7) {
+        eligibility = 'Class-III - 07 to 09 Years';
+      } else if (birthYear >= 2023 - 8) {
+        eligibility = 'Class-IV - 08 to 10 Years';
+      } else if (birthYear >= 2023 - 9) {
+        eligibility = 'Class-V - 09 to 11 Years';
+      } else if (birthYear >= 2023 - 10) {
+        eligibility = 'Class-VI - 10 to 12 Years';
+      } else if (birthYear >= 2023 - 11) {
+        eligibility = 'Class-VII - 11 to 13 Years';
+      } else if (birthYear >= 2023 - 12) {
+        eligibility = 'Class-VIII - 12 to 14 Years';
+      }
+    } else if (birthYear <= 2023 - 15) {
+      if (birthYear >= 2023 - 17) {
+        eligibility = 'Class-X - 15 to 17 Years';
+      } else if (birthYear >= 2023 - 16) {
+        eligibility = 'Class-X - 14 to 16 Years';
+      } else if (birthYear >= 2023 - 15) {
+        eligibility = 'Class-IX - 13 to 15 Years';
+      }
+    }
+
+    eligibilityText.textContent = eligibility;
+  }
+
+  // Attach event listener to update eligibility on select change
+  document.querySelector('select[name="year"]').addEventListener('change', updateEligibility);
+  document.querySelector('select[name="month"]').addEventListener('change', updateEligibility);
+</script>
+
+
 </body>
 
 </html>
