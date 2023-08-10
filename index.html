@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +9,124 @@
     <title>DOON MILITARY SCHOOL</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    
 </head>
 
 <body style="overflow-x: hidden;" >
+  
   <style>
+
+body {
+  margin: 0;
+  height: 2000px;
+  position: relative; /* Add this to establish stacking context for the body */
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 999; /* Adjust the z-index to ensure the icon bar appears above other content */
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: rgba(59, 89, 152, 0.5);
+  color: white;
+}
+
+.twitter {
+  background: rgba(85, 172, 238, 0.5);
+  color: white;
+}
+
+.google {
+  background: rgba(221, 75, 57, 0.5);
+  color: white;
+}
+
+.linkedin {
+  background: rgba(0, 123, 181, 0.5);
+  color: white;
+}
+
+.youtube {
+  background: rgba(187, 0, 0, 0.5);
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+  position: relative; /* Add this to establish stacking context for content */
+  z-index: 1; /* Ensure the content appears below the icon bar */
+}
+
+
+
+
+
+
+
+.section-2-bottom {
+    position: relative;
+    background-color: #0a17d37e; /* Set your desired background color */
+    z-index: 1;
+  }
+
+  .section-2-bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #FF5733, #00CCFF); /* Set your desired gradient colors */
+    opacity: 0.5; /* Adjust the opacity as needed */
+    clip-path: polygon(0% 0%, 100% 10%, 80% 100%, 0% 100%); /* Adjust the clip-path to create abstract shapes */
+    z-index: -1;
+  }
+
+  .section-2-bottom::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #0073ff; /* Set your desired color */
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .section-2-bottom .triangle {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #0073ff; /* Set your desired color */
+    z-index: -1;
+  }
     body, .container {
         overflow-x: hidden;
     }
@@ -36,14 +148,19 @@
     }
   </style>
 <!-- navigation starts here -->
-
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
 <nav class=" bg-white dark:bg-gray-150 fixed w-full z-20 top-0 left-0 border-b border-gray-200 ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       
-    <a href="index.html" class="flex items-center">
-        <!-- <img src="" class="h-8 mr-3" alt=" Logo"> -->
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">DOON MILITARY SCHOOL</span>
-    </a>
+      <a href="index.html" class="flex items-center">
+        <img src="/photos/logodoon.svg" class="w-24 h-auto" alt="logo" />        <span class="self-center text-md font-bold whitespace-nowrap dark:text-black">DOON MILITARY SCHOOL</span>
+      </a>
     <div class="flex md:order-2">
       <button type="button" class="nav-enrol-btn rounded-full" id="enrol-btn">Enrol Now</button>
       <button class="inline-block relative">
@@ -85,38 +202,7 @@
   </nav>
 
 
-<!-- navigation ends here -->
 
-
-    <!-- navigation bar start from here -->
-    <!-- <div class="nav-bar bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-        <div class="nav-left">
-            <H1>DEHRADUN MILITARY SCHOOL</H1>
-        </div>
-        <div class="nav-mid">
-            <ul class="nav-menu">
-                <li>RIMC</li>
-                <li>RMS</li>
-                <li>SAINIK SCHOOL</li>
-                <li>DMS</li>
-                <li>STUDY MATERIAL</li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <ul>
-                <li>
-                    <div class="nav-enrol-btn rounded-full">
-                        <h1>Enrol Now</h1>
-                    </div>
-                </li>
-                <li>
-                    <h1>#</h1>
-                </li>
-            </ul>
-        </div>
-    </div> -->
-
-    <!-- navigation bar end here -->
 <br>
 <br>
 <br><br><br>
@@ -124,7 +210,7 @@
 
 
     <!-- Banner Container starts -->
-    <div class="banner bg-white flex justify-around h-96 items-center shadow-sm">
+    <!-- <div class="banner bg-white flex justify-around h-96 items-center shadow-sm">
         <div class="banner-left">
             <h1 class="text-2xl bold text-black">The Best<br>
                 <span class="text-6xl text-black"> Military School</span> in India.<br>
@@ -139,8 +225,29 @@
               <li class="rounded-3xl p-3 my-5 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900"><a href="download.html">COMPLETE STUDY MATERIAL ></a></li>
             </ul>
         </div>
-    </div>
-
+    </div> -->
+    <br><br>
+    <div class="banner bg-white flex flex-col md:flex-row items-center shadow-sm p-4 h-140">
+      <div class="banner-left text-center md:w-1/2 mb-4 md:mb-0">
+          <h1 class="text-2xl font-bold text-black">The Best<br>
+              <span class="text-6xl text-black"> Military School</span> in India.<br>
+              With <br><span class="text-6xl text-black">82.2%</span> Selection Rate.
+          </h1>
+          <h2 class="text-sky-400">#dreamUniform</h2>
+      </div>
+      <div class="banner-right text-center md:w-1/2">
+          <ul class="space-y-2 md:w-64 mx-auto">
+              <li class="rounded-3xl p-2 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900"><a href="#this">CHECK ELIGIBILITY ></a></li>
+              <li class="rounded-3xl p-2 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900"><a href="registration.html">APPLY NOW ></a></li>
+              <li class="rounded-3xl p-2 border-2 bg-gradient-to-r from-pink-600 via-purple-700 to-blue-900"><a href="download.html">STUDY MATERIAL ></a></li>
+          </ul>
+      </div>
+    
+  </div>
+  
+  
+  
+  <br><br>
     <!-- banner container ends -->
     <div class="section-2-top h-48 flex justify-center items-center">
         <h1 class="text-center font-bold text-2xl">Prepare for Sainik Schools & RIMC Exam With A
@@ -161,7 +268,7 @@
   <div class="relative block md:flex items-center">
     
     <div class="w-full md:w-1/2 relative z-0 px-8 md:px-0 md:py-16       ">
-      <div class="section-2-bottom text-white rounded-b md:rounded-b-none md:rounded-r shadow-lg overflow-hidden">
+      <!-- <div class="section-2-bottom text-white rounded-b md:rounded-b-none md:rounded-r shadow-lg overflow-hidden">
         <div class="text-lg font-large uppercase p-8 text-center  tracking-wide"></div>
         <div class="text-center text-xl sm:text-md max-w-sm mx-auto mt-8 text-white-200 px-10 lg:px-0">
           Find out which schools your
@@ -170,10 +277,26 @@
         <div class="mt-8  mx-8 lg:mx-16 flex flex-wrap">
           <h1>
               Need help? Talk to us.<br>
-              8171054504, 6397321522
+              +91 8586858986, +91 8077192697
           </h1>
         </div>
         <a class="block flex items-center justify-center section-2-bottom  p-8 text-md font-semibold text-gray-300 uppercase mt-8" href="#">
+          <span></span>
+          <span class="font-medium text-gray-300 ml-2"></span>
+        </a>
+      </div> -->
+      <div class="section-2-bottom text-white rounded-b md:rounded-b-none md:rounded-r shadow-lg overflow-hidden">
+        <div class="text-lg font-large uppercase p-8 text-center tracking-wide"></div>
+        <div class="text-center text-xl sm:text-md max-w-sm mx-auto mt-8 text-white-200 px-10 lg:px-0">
+          Find out which schools your child can apply to this year.
+        </div>
+        <div class="mt-8 mx-8 lg:mx-16 flex flex-wrap">
+          <h1>
+            Need help? Talk to us.<br>
+            +91 8586858986, +91 8077192697
+          </h1>
+        </div>
+        <a class="block flex items-center justify-center section-2-bottom p-8 text-md font-semibold text-gray-300 uppercase mt-8" href="#">
           <span></span>
           <span class="font-medium text-gray-300 ml-2"></span>
         </a>
@@ -369,7 +492,11 @@
               <p class="text-sm font-semibold text-gray-400">Many students dream to study at RIMC Dehradun as it is a world-class school in terms of infrastructure, academics, discipline, and life skills. The school focuses on the complete personality development of its students.
 
               </p>
-              <button class="text-sm mt-6 px-4 py-2 bg-blue-400 text-white rounded-lg tracking-wider hover:bg-blue-300 outline-none">EXPLORE COURSES</button>
+              <a href="/rims.html" class="block text-center">
+                <button class="text-sm mt-6 px-4 py-2 bg-blue-400 text-white rounded-lg tracking-wider hover:bg-blue-300 outline-none">
+                  EXPLORE COURSES
+                </button>
+              </a>
             </div>
            
           </div>
@@ -382,7 +509,11 @@
               <h2 class="text-gray-900 text-lg font-bold">RMS</h2>
               <!-- <h3 class="mt-2 text-xl font-bold text-orange-500 text-left">+ 150.000 ₭</h3> -->
               <p class="text-sm font-semibold text-gray-400">There are a total of 5 Rashtriya Military Schools all over India. Every year thousands of students apply for CET to get admission in RMS. Proper preparation and guidance are needed to crack the entrance test.</p>
-              <button class="text-sm mt-6 px-4 py-2 bg-blue-400 text-white rounded-lg tracking-wider hover:bg-blue-300 outline-none">EXPLORE COURSES</button>
+              <a href="/rms.html" class="block text-center">
+                <button class="text-sm mt-6 px-4 py-2 bg-blue-400 text-white rounded-lg tracking-wider hover:bg-blue-300 outline-none">
+                  EXPLORE COURSES
+                </button>
+              </a>
             </div>
            
           </div>
@@ -395,7 +526,11 @@
               <h2 class="text-gray-900 text-lg font-bold">Sainik School</h2>
               <!-- <h3 class="mt-2 text-xl font-bold text-yellow-500 text-left">+ 150.000 ₭</h3> -->
               <p class="text-sm font-semibold text-gray-400">If you are passionate about joining Defence services, then you must be equally passionate about its preparation. The preparation starts from a very early age in Sainik Schools. Let's clear the exam together.</p>
-              <button class="text-sm mt-6 px-4 py-2 bg-blue-400 text-white rounded-lg tracking-wider hover:bg-blue-300 outline-none">EXPLORE COURSES</button>
+              <a href="/sainik.html" class="block text-center">
+                <button class="text-sm mt-6 px-4 py-2 bg-blue-400 text-white rounded-lg tracking-wider hover:bg-blue-300 outline-none">
+                  EXPLORE COURSES
+                </button>
+              </a>
             </div>
            
           </div>
@@ -408,7 +543,11 @@
               <h2 class="text-gray-900 text-lg font-bold">DMS</h2>
               <!-- <h3 class="mt-2 text-xl font-bold text-orange-500 text-left">+ 150.000 ₭</h3> -->
               <p class="text-sm font-semibold text-gray-400">Dehradun Military School (DMS) is an exclusive Sainik school of India. One of the finest in the country for students who are passionate about defense services. So, start your preparation with us.</p>
-              <button class="text-sm mt-6 px-4 py-2 bg-blue-400 text-white rounded-lg tracking-wider hover:bg-blue-300 outline-none">EXPLORE COURSES</button>
+              <a href="#" class="block text-center">
+                <button class="text-sm mt-6 px-4 py-2 bg-blue-400 text-white rounded-lg tracking-wider hover:bg-blue-300 outline-none">
+                  EXPLORE COURSES
+                </button>
+              </a>
             </div>
            
           </div>
@@ -425,10 +564,9 @@
 
 
     <!-- offer page start  -->
-    <div class="">
-        <!-- main card -->
+    <!-- <div class="">
+       
         <div class="section-2-bottom p-10 rounded-xl">
-            <!-- headers content-->
             <div class="offer-section-top flex justify-around">
                 <h1 class="text-3xl text-white font-bold">
                     What we offer
@@ -440,11 +578,9 @@
                 </h1>
             </div>
 
-            <!-- subscriptions -->
             <div
                 class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
 
-                <!-- card 1 -->
                 <div class="bg-white rounded-xl hover:bg-cyan-600">
                     <div class="flex flex-col p-8 rounded-xl shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Black_Man_Working_at_his_Laptop_on_the_Couch_Cartoon_Vector.svg/1280px-Black_Man_Working_at_his_Laptop_on_the_Couch_Cartoon_Vector.svg.png" >
@@ -460,7 +596,6 @@
                     
                 </div>
 
-                <!-- card 2 -->
                 <div class="bg-white rounded-xl hover:bg-cyan-600">
                     <div class="flex flex-col p-8 rounded-xl shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Black_Man_Working_at_his_Laptop_on_the_Couch_Cartoon_Vector.svg/1280px-Black_Man_Working_at_his_Laptop_on_the_Couch_Cartoon_Vector.svg.png" >
@@ -477,7 +612,6 @@
                     </div>
                     
                 </div>
-<!-- card 3 -->
 <div class="bg-white rounded-xl hover:bg-cyan-600">
     <div class="flex flex-col p-8 rounded-xl shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Black_Man_Working_at_his_Laptop_on_the_Couch_Cartoon_Vector.svg/1280px-Black_Man_Working_at_his_Laptop_on_the_Couch_Cartoon_Vector.svg.png" >
@@ -494,7 +628,6 @@
     
 </div>
 
-<!-- card 4 -->
 <div class="bg-white rounded-xl hover:bg-cyan-600">
     <div class="flex flex-col p-8 rounded-xl shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Black_Man_Working_at_his_Laptop_on_the_Couch_Cartoon_Vector.svg/1280px-Black_Man_Working_at_his_Laptop_on_the_Couch_Cartoon_Vector.svg.png" >
@@ -517,7 +650,7 @@
 
             
         </div>
-    </div>
+    </div> -->
     <!-- offer page end -->
 
     
@@ -535,17 +668,18 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center transform transition duration-500 hover:scale-110">
             <div>
-                <img class="object-center object-cover h-auto w-full" src="/photos/1.JPG" alt="photo">
+                <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimcaditya.jpeg" alt="photo">
             </div>
             <div class="text-center py-8 sm:py-6">
-                <p class="text-xl text-gray-700 font-bold mb-2">Recent Results
-                    Recent Results</p>
+                <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+                </p>
                
             </div>
         </div>
         <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center transform transition duration-500 hover:scale-110">
             <div>
-                <img class="object-center object-cover h-auto w-full" src="/photos/9.JPG" alt="photo">
+                <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimcdeepak.jpeg" alt="photo">
             </div>
             <div class="text-center py-8 sm:py-6">
                 <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers</p>
@@ -554,16 +688,18 @@
         </div>
         <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center transform transition duration-500 hover:scale-110">
             <div>
-                <img class="object-center object-cover h-auto w-full" src="/photos/3.JPG" alt="photo">
+                <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimcrag.jpeg" alt="photo">
             </div>
             <div class="text-center py-8 sm:py-6">
-                <p class="text-xl text-gray-700 font-bold mb-2">Compass Special</p>
+                <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+                </p>
                 
             </div>
         </div>
         <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center transform transition duration-500 hover:scale-110">
             <div>
-                <img class="object-center object-cover h-auto w-full" src="/photos/4.JPG" alt="photo">
+                <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimcsarthak.jpeg" alt="photo">
             </div>
             <div class="text-center py-8 sm:py-6">
                 <p class="text-xl text-gray-700 font-bold mb-2">Compass on YouTube</p>
@@ -572,22 +708,133 @@
         </div>
         <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center transform transition duration-500 hover:scale-110">
             <div>
-                <img class="object-center object-cover h-auto w-full" src="/photos/5.JPG" alt="photo">
+                <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimcselecteddeep.jpeg" alt="photo">
             </div>
             <div class="text-center py-8 sm:py-6">
-                <p class="text-xl text-gray-700 font-bold mb-2">Our students and parents love us</p>
+                <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+                </p>
                
             </div>
         </div>
         <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
             <div>
-                <img class="object-center object-cover h-auto w-full" src="/photos/6.JPG" alt="photo">
+                <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimcselectedjay.jpeg" alt="photo">
             </div>
             <div class="text-center py-8 sm:py-6">
-                <p class="text-xl text-gray-700 font-bold mb-2">Honest Reviews</p>
+                <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+</p>
                
             </div>
         </div>
+
+
+        <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+          <div>
+              <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rmsadit.jpeg" alt="photo">
+          </div>
+          <div class="text-center py-8 sm:py-6">
+              <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+              </p>
+             
+          </div>
+      </div>
+
+      <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+        <div>
+            <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rmsayush.jpeg" alt="photo">
+        </div>
+        <div class="text-center py-8 sm:py-6">
+            <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+            </p>
+           
+        </div>
+    </div>
+    <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+      <div>
+          <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rmsishaan.jpeg" alt="photo">
+      </div>
+      <div class="text-center py-8 sm:py-6">
+          <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+          </p>
+         
+      </div>
+  </div>
+  <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+    <div>
+        <img class="object-center object-cover h-auto w-full" src="/photos/achiv/sainikprateek.jpeg" alt="photo">
+    </div>
+    <div class="text-center py-8 sm:py-6">
+        <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+        </p>
+       
+    </div>
+</div>
+<div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+  <div>
+      <img class="object-center object-cover h-auto w-full" src="/photos/achiv/sainikschoolprag.jpeg" alt="photo">
+  </div>
+  <div class="text-center py-8 sm:py-6">
+      <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+      </p>
+     
+  </div>
+</div>
+<div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+  <div>
+      <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rmsarnav.jpeg" alt="photo">
+  </div>
+  <div class="text-center py-8 sm:py-6">
+      <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+      </p>
+     
+  </div>
+</div>
+<div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+  <div>
+      <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimckri.jpeg" alt="photo">
+  </div>
+  <div class="text-center py-8 sm:py-6">
+      <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+      </p>
+     
+  </div>
+</div>
+<div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+  <div>
+      <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimsdev.jpeg" alt="photo">
+  </div>
+  <div class="text-center py-8 sm:py-6">
+      <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+      </p>
+     
+  </div>
+</div>
+
+
+
+
+
+        <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center  transform transition duration-500 hover:scale-110">
+          <div>
+              <img class="object-center object-cover h-auto w-full" src="/photos/achiv/rimcvinay.jpeg" alt="photo">
+          </div>
+          <div class="text-center py-8 sm:py-6">
+              <p class="text-xl text-gray-700 font-bold mb-2">Meet our Vibrant Achievers
+
+              </p>
+             
+          </div>
+      </div>
     </div>
 </section>
 
@@ -605,15 +852,15 @@
   <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
        <!-- Item 1 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="photos/1.JPG" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <img src="photos/slider/slider1.jpeg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
       </div>
       <!-- Item 2 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <img src="photos/3.JPG" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <img src="photos/slider/slider2.jpeg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
       </div>
       <!-- Item 3 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="photos/4.JPG" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <img src="photos/slider/slider3.jpeg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
       </div>
       <!-- Item 4 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -795,10 +1042,11 @@ review section starts -->
     <div class="h-24 bg-white mb-4 flex items-center justify-center shadow-xl
 
     ">
-      <p class="text-center text-black font-semibold">Notification 1</p>
+    <a href="/rimcnotification.pdf" download="rimcnotification" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mt-2 inline-block">Rimc Exam Notification 2023</a>
+     
     </div>
     <div class="h-24 bg-white flex items-center justify-center shadow-xl">
-      <p class="text-center text-black font-semibold">Notification 2</p>
+      <a href="/Feedetails.pdf" download="rimcnotification" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mt-2 inline-block">Fees Detail Notification 2023</a>
     </div>
   </div>
 </div>
@@ -878,7 +1126,7 @@ review section starts -->
                 Do you have any questions?<br>
                 Our experts have the answers.
               </h1>
-              <a href="tel:+917906262860" class="block bg-green-700 hover:bg-green-800 p-4 text-md font-semibold text-white uppercase">
+              <a href="tel:+918586858986" class="block bg-green-700 hover:bg-green-800 p-4 text-md font-semibold text-white uppercase">
                 Call Us
               </a>
             </div>
@@ -910,11 +1158,12 @@ review section starts -->
 <!-- footer starts -->
 
 <!-- component -->
+
 <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 flex-shrink-0">
     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
-        <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
+          <img src="/photos/logodoon.svg" class="w-24 h-auto" alt="logo" />
           <p class="max-w-xs mt-4 text-sm text-gray-600">
             DOON MILITARY SCHOOL
           </p>
@@ -953,6 +1202,8 @@ review section starts -->
                 </a>
                 <a class="hover:opacity-75" href="/registration.html">
                   ONLINE REGISTRATION  </a>
+                  <a class="hover:opacity-75" href="download.html">  STUDY MATERIAL
+                  </a>
             </nav>
           </div>
           <div>
@@ -972,23 +1223,16 @@ review section starts -->
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <div class="fixed bottom-4 left-4">
-      <a href="/registration.html">
-        <button class="bg-purple-500 hover:bg-purple-700 text-white py-3 px-6 rounded-full">
-          Register Now
-        </button>
+   
+    <!-- <div class="fixed bottom-1 left z-50">
+      <a href="tel:+918586858986">
+        <img class="w-40 h-20 fill-current" src="callnow.svg" alt="Sparkle Button">
       </a>
     </div> -->
-    <div class="fixed bottom-2 left-1 z-50">
-      <a href="tel:+1234567890">
-        <img class="w-60 h-60 fill-current" src="callnow.svg" alt="Sparkle Button">
-      </a>
-    </div>
-    <!-- <div class="fixed bottom-1 right-1 z-50">
-      <a href="/registration.html">
-        <img class="w-60 h-60 fill-current" src="callnow.svg" alt="Sparkle Button">
-      </a>
-    </div> -->
+    <div class="fixed bottom-4 left-4">
+      <a href="tel:+918586858986" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow-lg">Call Now</a>
+  </div>
+   
     
     <button id="openFormButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hidden">
       Open Form
