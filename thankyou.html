@@ -288,23 +288,181 @@ body {
   </div>
 </footer>
 <!-- footer ends -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        // Get the button element
-        var enrolButton = document.getElementById("enrol-btn");
-      
-        // Add click event listener
-        enrolButton.addEventListener("click", function() {
-          // Redirect to the registration page
-          window.location.href = "/registration";
-        });
-      </script>
-        <div class="fixed bottom-4 left-4">
-          <a href="tel:+918586858986" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow-lg">Call Now</a>
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+  <!-- <div class="fixed bottom-1 left z-50">
+    <a href="tel:+918586858986">
+      <img class="w-40 h-20 fill-current" src="callnow.svg" alt="Sparkle Button">
+    </a>
+  </div> -->
+  <div class="fixed bottom-4 left-4">
+    <a href="tel:+918586858986" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow-lg">Call Now</a>
+</div>
+ 
+  
+  <button id="openFormButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hidden">
+    Open Form
+  </button>
+  
+  <div id="popupForm" class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75">
+    <div class="bg-white p-8 rounded-lg flex flex-col-reverse sm:flex-row z-100 popup-container" style="background-image: url('army2.png'); background-size: cover;">
+      <div class="w-full sm:w-1/2 flex items-center justify-center">
+        <img src="left.png" alt="Image" class="max-h-full max-w-full">
       </div>
-       
+      <div class="w-full sm:w-1/2 pl-8">
+        <h2 class="text-xl text-white mb-4">Stay Tuned With Us</h2>
+        <p class="text-white">Provide us details and keep getting updates from us</p>
+        
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe_PhLLq18n9kPc0kOFHgLJGNU_zcvecu6Ck7L23SquSXqgQw/formResponse" target="_self" id="bootstrapForm" method="POST" class="bg-white p-8 rounded-lg">
+          <fieldset class="mb-6">
+            <legend for="1045684528" class="font-bold">Name</legend>
+            <div class="form-group">
+              <input id="751235056" type="text" name="entry.751235056" class="form-control border-gray-300 rounded-md px-4 py-2 w-full" required>
+            </div>
+          </fieldset>
+      
+          <fieldset class="mb-6">
+            <legend for="2011897892" class="font-bold">Phone Number</legend>
+            <div class="form-group">
+              <input id="376471555" type="text" name="entry.376471555" class="form-control border-gray-300 rounded-md px-4 py-2 w-full" required>
+            </div>
+          </fieldset>
+      
+          <fieldset class="mb-6">
+            <legend for="200388493" class="font-bold">Email</legend>
+            <div class="form-group">
+              <input id="892481909" type="text" name="entry.892481909" class="form-control border-gray-300 rounded-md px-4 py-2 w-full" required>
+            </div>
+          </fieldset>
+      
+          <fieldset class="mb-6">
+            <legend for="1394651654" class="font-bold">City</legend>
+            <div class="form-group">
+              <input id="780804026" type="text" name="entry.780804026" class="form-control border-gray-300 rounded-md px-4 py-2 w-full" required>
+            </div>
+          </fieldset>
+      
+          <input type="hidden" name="fvv" value="1">
+          <input type="hidden" name="fbzx" value="-2075483773265648935">
+          <input type="hidden" name="pageHistory" value="0">
+      
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    
+    </div>
+    
+
+
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
+<script>
+// Function to open the pop-up form
+function openPopupForm() {
+  const popupForm = document.getElementById('popupForm');
+  popupForm.classList.remove('hidden');
+}
+
+// Function to close the pop-up form
+function closePopupForm() {
+  const popupForm = document.getElementById('popupForm');
+  popupForm.classList.add('hidden');
+}
+
+// Check if the form has been displayed before
+const hasFormBeenDisplayed = localStorage.getItem('hasFormBeenDisplayed');
+if (!hasFormBeenDisplayed) {
+  // Open the pop-up form after 2 seconds
+  setTimeout(openPopupForm, 2000);
+  localStorage.setItem('hasFormBeenDisplayed', true);
+}
+
+$(document).ready(function() {
+  $('#bootstrapForm').submit(function(event) {
+    event.preventDefault();
+    var extraData = {};
+    $('#bootstrapForm').ajaxSubmit({
+      data: extraData,
+      dataType: 'jsonp',
+      error: function() {
+        closePopupForm(); // Close the pop-up form
+        window.location.href = '/thankyou2.html'; // Redirect to the custom thank-you page
+      }
+    });
+  });
+});
+</script>
+
+
+
+
+<script>
+// Get the button element
+var enrolButton = document.getElementById("enrol-btn");
+
+// Add click event listener
+enrolButton.addEventListener("click", function() {
+  // Redirect to the registration page
+  window.location.href = "/registration.html";
+});
+</script>
+
+
+<script>
+// Function to update eligibility text
+function updateEligibility() {
+  const birthYear = parseInt(document.querySelector('select[name="year"]').value);
+  const birthMonth = document.querySelector('select[name="month"]').value;
+
+  const eligibilityText = document.getElementById('eligibility-text');
+  let eligibility = '';
+
+  if (birthYear >= 2023 - 9) {
+    if (birthYear >= 2023 - 7) {
+      eligibility = 'Class-III - 07 to 09 Years';
+    } else if (birthYear >= 2023 - 8) {
+      eligibility = 'Class-IV - 08 to 10 Years';
+    } else if (birthYear >= 2023 - 9) {
+      eligibility = 'Class-V - 09 to 11 Years';
+    } else if (birthYear >= 2023 - 10) {
+      eligibility = 'Class-VI - 10 to 12 Years';
+    } else if (birthYear >= 2023 - 11) {
+      eligibility = 'Class-VII - 11 to 13 Years';
+    } else if (birthYear >= 2023 - 12) {
+      eligibility = 'Class-VIII - 12 to 14 Years';
+    }
+  } else if (birthYear <= 2023 - 15) {
+    if (birthYear >= 2023 - 17) {
+      eligibility = 'Class-X - 15 to 17 Years';
+    } else if (birthYear >= 2023 - 16) {
+      eligibility = 'Class-X - 14 to 16 Years';
+    } else if (birthYear >= 2023 - 15) {
+      eligibility = 'Class-IX - 13 to 15 Years';
+    }
+  }
+
+  eligibilityText.textContent = eligibility;
+}
+
+// Attach event listener to update eligibility on select change
+document.querySelector('select[name="year"]').addEventListener('change', updateEligibility);
+document.querySelector('select[name="month"]').addEventListener('change', updateEligibility);
+</script>
+
+
 </body>
 
 </html>
